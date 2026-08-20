@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 💇‍♀️ BeautifyStore</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+</head>
+<body>
+    
+ <!-- pre-loader section -->
+     <div id="preloader">
+    <div class="loader-content">
+        <h1 id="percentage">0%</h1>
+        <div class="progress-bar">
+            <div id="bar"></div>
+        </div>
+    </div>
+</div> 
+
+
+<!-- header-section -->
+
+    <header id="main-header" class="bg-gray-50 text-black flex h-auto justify-between  md:justify-around items-center w-full py-4 px-6 sticky top-0 z-50 ">
+        <div class="text-2xl font-medium">Beautify.</div>
+   <nav id="mobileMenu" class="hidden absolute top-full left-0 w-full z-40 md:bg-gray-50  bg-gray-100 py-4 shadow-lg md:shadow-none md:py-0 md:static md:w-auto md:flex">
+        <ul class="flex flex-col items-center gap-4 w-full md:flex-row md:justify-evenly md:gap-8 ">
+            <li class="capitalize cursor-pointer font-semibold hover:text-orange-600 transition duration-300">home</li>
+            <li class="capitalize cursor-pointer font-semibold hover:text-orange-600 transition duration-300">about</li>
+            <li class="capitalize cursor-pointer font-semibold hover:text-orange-600 transition duration-300">services</li>
+            <li class="capitalize cursor-pointer font-semibold hover:text-orange-600 transition duration-300">contact</li>
+        </ul>
+    </nav>
+
+        <!-- icon -->
+        <div class="flex gap-10 hidden md:flex cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<path fill="#060202" d="M18 10c0-4.41-3.59-8-8-8s-8 3.59-8 8s3.59 8 8 8c1.85 0 3.54-.63 4.9-1.69l5.1 5.1L21.41 20l-5.1-5.1A8 8 0 0 0 18 10M4 10c0-3.31 2.69-6 6-6s6 2.69 6 6s-2.69 6-6 6s-6-2.69-6-6" />
+</svg>
+
+
+<div class="relative">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
+	<path d="M0 0h1024v1024H0z" fill="none" />
+	<path fill="#060202" d="M924.3 338.4a447.6 447.6 0 0 0-96.1-143.3a443.1 443.1 0 0 0-143-96.3A443.9 443.9 0 0 0 512 64h-2c-60.5.3-119 12.3-174.1 35.9a444.1 444.1 0 0 0-141.7 96.5a445 445 0 0 0-95 142.8A449.9 449.9 0 0 0 65 514.1c.3 69.4 16.9 138.3 47.9 199.9v152c0 25.4 20.6 46 45.9 46h151.8a447.7 447.7 0 0 0 199.5 48h2.1c59.8 0 117.7-11.6 172.3-34.3A443.2 443.2 0 0 0 827 830.5c41.2-40.9 73.6-88.7 96.3-142c23.5-55.2 35.5-113.9 35.8-174.5c.2-60.9-11.6-120-34.8-175.6M312.4 560c-26.4 0-47.9-21.5-47.9-48s21.5-48 47.9-48s47.9 21.5 47.9 48s-21.4 48-47.9 48m199.6 0c-26.4 0-47.9-21.5-47.9-48s21.5-48 47.9-48s47.9 21.5 47.9 48s-21.5 48-47.9 48m199.6 0c-26.4 0-47.9-21.5-47.9-48s21.5-48 47.9-48s47.9 21.5 47.9 48s-21.5 48-47.9 48" />
+</svg>
+<span class="absolute h-5 w-5 text-center top-[-10px] left-3 shadow-xl bg-red-600 rounded-2xl text-sm text-white">5</span>
+</div>
+
+<div class="relative">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<g fill="none" stroke="#060202" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+		<path d="m12 21.844l-9.588-10a5.672 5.672 0 0 1 3.102-9.613a5.67 5.67 0 0 1 4.92 1.588L12 5.384l1.566-1.565a5.673 5.673 0 0 1 8.023 8.022z" />
+		<path d="m12 5.384l2.937 2.9a.75.75 0 0 1-.249 1.23L9.8 11.473a.751.751 0 0 0-.057 1.368l3.925 1.959a.75.75 0 0 1 .376.908L12 21.844" />
+	</g>
+</svg>
+<span class="absolute h-5 w-5 text-center top-[-10px] left-3 bg-red-600 rounded-2xl text-sm text-white">10</span>
+
+</div>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<g fill="#060202" fill-rule="evenodd" clip-rule="evenodd">
+		<path d="M16 9a4 4 0 1 1-8 0a4 4 0 0 1 8 0m-2 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0" />
+		<path d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1M3 12c0 2.09.713 4.014 1.908 5.542A8.99 8.99 0 0 1 12.065 14a8.98 8.98 0 0 1 7.092 3.458A9 9 0 1 0 3 12m9 9a8.96 8.96 0 0 1-5.672-2.012A6.99 6.99 0 0 1 12.065 16a6.99 6.99 0 0 1 5.689 2.92A8.96 8.96 0 0 1 12 21" />
+	</g>
+</svg>
+<div class="relative">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<path fill="#000" d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2" />
+</svg>
+<span class="absolute h-5 w-5 text-center top-[-10px] left-3 bg-red-600 rounded-2xl text-sm text-white">4</span>
+
+</div>
+        </div>
+
+      <div id="menuBtn" class="flex flex-col gap-1 cursor-pointer md:hidden">
+        <span class="w-8 h-1 bg-black rounded-2xl transition duration-300 origin-left line1"></span>
+        <span class="w-8 h-1 bg-black rounded-2xl transition duration-300 line2"></span>
+        <span class="w-8 h-1 bg-black rounded-2xl transition duration-300 origin-left line3"></span>
+    </div>
+    </header>
+
+
+    <!-- hero-seciton -->
+<section class="relative w-full h-[600px] bg-cover bg-center bg-no-repeat" style="background-image: url(./public/images/hero-bg.png);">
+    
+    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+
+    <div class="relative z-10 flex flex-col text-center md:items-start justify-center h-full text-start ml-10 md:ml-20 px-4">
+        
+        <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"  class="text-4xl md:text-6xl font-bold text-white mb-4">
+            Proven To Tackle <br> Wrinkles & Acne
+        </h1>
+        
+        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="text-lg text-gray-200 mb-6 max-w-md">
+            What makes us different? We treat you personally – and honestly.
+        </p>
+
+        <p data-aos="fade-up" data-aos-duration="800"  class="capitalize mb-5 text-white text-3xl">from $49</p>
+
+        <button data-aos="fade-up" data-aos-duration="800"  class="bg-emerald-900 cursor-pointer hover:bg-emerald-800 text-white font-medium py-3 px-6 rounded-md transition duration-300">Learn More</button>
+
+    </div>
+</section>
+
+<!-- shop by categories -->
+
+<section class="flex justify-center items-center flex-col flex-wrap w-full h-auto py-8">
+
+    <h1 class="capitalize text-3xl text-black font-medium">shop by categories</h1>
+
+
+      <!-- box container -->
+    <div class="flex  gap-2 justify-center flex-wrap items-center p-1 py-8">
+
+
+       <!-- box 01 -->
+       <div class="flex  justify-center items-center flex-col">
+         <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"   class="h-45 w-50 overflow-hidden   bg-gray-100 rounded-2xl">
+            <img class=" w-full h-full" src="./public/images/vesline.png" alt="">
+        </div>
+        <p>Vesaline</p>
+       </div>
+
+       <!-- box02 -->
+       <div class="flex justify-center items-center flex-col">
+         <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="h-45 w-50 overflow-hidden  bg-gray-100 rounded-2xl">
+            <img class=" w-full h-full" src="./public/images/tiser.png" alt="">
+        </div>
+        <p>Sanitiser</p>
+       </div>
+
+       <!-- box03 -->
+       <div class="flex justify-center items-center flex-col">
+         <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"   class="h-45 w-50 overflow-hidden  bg-gray-100 rounded-2xl">
+            <img class=" w-full h-full" src="./public/images/cream.png" alt="">
+        </div>
+        <p>Fash Wash</p>
+       </div>
+
+       <!-- box-04 -->
+       <div class="flex justify-center items-center flex-col">
+         <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"  class="h-45 w-50 overflow-hidden    bg-gray-100 rounded-2xl">
+            <img class=" w-full h-full" src="./public/images/drops.png" alt="">
+        </div>
+        <p class="capitalize">centella</p>
+       </div>
+
+       <!-- box05 -->
+       <div class="flex justify-center items-center flex-col">
+         <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"  class="h-45 w-50 overflow-hidden   bg-gray-100 rounded-2xl">
+            <img class=" w-full h-full" src="./public/images/cream.png" alt="">
+        </div>
+        <p class="capitalize">Fase Wash</p>
+       </div>
+
+</section>
+       <!-- next-section -->
+
+       <section class="w-full h-auto py-20 flex gap-3 flex-wrap items-center justify-around bg-white">
+        <div data-aos="fade-right"  class="w-auto h-auto rounded-3xl overflow-hidden group">
+            <img class="h-100 p-2 object-cover transition-transform duration-500 ease-out group-hover:scale-110" src="./public/images/banner.png" alt="">
+        </div>
+        <div class="flex flex-col gap-5   md:justify-start px-3 ">
+            <p class="capitalize font-semibold">welcom to discount hub </p>
+            <h1 data-aos="fade-up" data-aos-duration="800" class="capitalize text-3xl md:text-5xl font-extrabold text-green-900">our commitment <br>to sustainabilibty</h1>
+            <p data-aos="fade-up" data-aos-duration="800"> What makes us different? We treat you personally – and honestly. <br>What makes us different? We treat you personally – and honestly.</p>
+            <button data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="py-2 bg-green-900 rounded-sm cursor-pointer text-white px-4 w-35 capitalize">more about us</button>
+        </div>
+       </section>
+
+
+       <!-- next-seciton -->
+
+       <section class="flex w-full flex-col h-auto justify-center items-center py-4">
+        <h1 class="capitalize text-3xl font-medium text-center text-green-950">popular on the beauty store</h1>
+
+        <!-- box container -->
+         <div class="flex flex-wrap  gap-6 justify-center items-center  mt-6">
+    <!--  box 01 -->
+       <div class="flex relative justify-start  flex-col">
+         <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos="fade-up" data-aos-duration="800" class="h-45 w-50 overflow-hidden  bg-gray-100 ">
+            <span class="w-10 h-5 bg-red-700 rounded-2xl absolute top-1 left-1 text-center text-white">Sale</span>
+
+            <img class=" w-full h-full" src="./public/images/vesline.png" alt="">
+        </div>
+        <p class="font-semibold">Skin Care & Beauty</p>
+<div class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+</div>
+<div class="flex gap-2">
+    <p class="line-through text-gray-500">$99.05 </p>
+<span class="text-red-500"> $69.05</span>
+</div>
+        
+       </div>
+       <!-- box 02 -->
+       <div class="flex justify-start  flex-col">
+         <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos="fade-up" data-aos-duration="800" class="h-45 w-50 overflow-hidden  bg-gray-100 ">
+            <img class=" w-full h-full" src="./public/images/cream.png" alt="">
+        </div>
+        <p class="font-semibold">Skin Care & Beauty</p>
+<div class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+</div>
+<div class="flex gap-2">
+    <p class="line-through text-gray-500">$99.05 </p>
+<span class="text-red-500"> $69.05</span>
+</div>
+        
+       </div>
+       <!-- box 03 -->
+       <div class="flex justify-start  flex-col">
+         <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos="fade-up" data-aos-duration="800" class="h-45 w-50 overflow-hidden  bg-gray-100 ">
+            <img class=" w-full h-full" src="./public/images/drops.png" alt="">
+        </div>
+        <p class="font-semibold">Skin Care & Beauty</p>
+<div class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+</div>
+<div class="flex gap-2">
+    <p class="line-through text-gray-500">$99.05 </p>
+<span class="text-red-500"> $69.05</span>
+</div>
+        
+       </div>
+       <!-- box 04 -->
+       <div class="flex justify-start  flex-col">
+         <div data-aos="fade-up" data-aos-duration="800" class="h-45 w-50 overflow-hidden  bg-gray-100 ">
+            <img class=" w-full h-full" src="./public/images/tiser.png" alt="">
+        </div>
+        <p class="font-semibold">Skin Care & Beauty</p>
+<div class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+</div>
+<div class="flex gap-2">
+    <p class="line-through text-gray-500">$99.05 </p>
+<span class="text-red-500"> $69.05</span>
+</div>
+        
+       </div>
+
+
+       </div>
+       </section>
+
+
+       <!-- seciton -->
+        <section class="w-full h-auto flex flex-col justify-center items-center py-6">
+          
+
+
+            <!-- images seciton -->
+             <div class="flex flex-wrap justify-center items-center mt-5 gap-4">
+                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="h-60 w-60 overflow-hidden">
+                    <img class="w-full h-full rounded-2xl" src="./public/images/beastly.png" alt="">
+                </div>
+                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="h-60 w-60 overflow-hidden">
+                    <img class="w-full h-full rounded-2xl" src="./public/images/crafted.png" alt="">
+                </div>
+                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="h-60 w-60 overflow-hidden">
+                    <img class="w-full h-full rounded-2xl" src="./public/images/toothpast.png" alt="">
+                </div>
+                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="h-60 w-60 overflow-hidden">
+                    <img class="w-full h-full rounded-2xl" src="./public/images/dropss.png" alt="">
+                </div>
+             </div>
+        </section>
+
+
+        <!-- nex-seciton -->
+         <section class="flex justify-center items-center w-full h-auto">
+            <h1 class="capitalize text-3xl text-green-950 font-medium">best deals on the beautify store</h1>
+
+         </section>
+       
+
+            <div class="flex flex-wrap  gap-6 justify-center items-center  mt-6">
+    <!--  box 01 -->
+       <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="flex relative justify-start  flex-col">
+         <div class="h-45 w-50 overflow-hidden  bg-gray-100 ">
+            <span class="w-10 h-5 bg-red-700  absolute top-0 left-0 text-center text-white">Sale</span>
+
+            <img class=" w-full h-full" src="./public/images/vesline.png" alt="">
+        </div>
+        <p class="font-semibold">Skin Care & Beauty</p>
+<div class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+</div>
+<div class="flex gap-2">
+    <p class="line-through text-gray-500">$99.05 </p>
+<span class="text-red-500"> $69.05</span>
+</div>
+        
+       </div>
+       <!-- box 02 -->
+       <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="flex justify-start  flex-col">
+         <div class="h-45 w-50 overflow-hidden relative  bg-gray-100 ">
+            <span class="w-10 h-5 bg-red-700  absolute top-0 left-0 text-center text-white">Sale</span>
+
+            <img class=" w-full h-full" src="./public/images/cream.png" alt="">
+        </div>
+        <p class="font-semibold">Skin Care & Beauty</p>
+<div class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+</div>
+<div class="flex gap-2">
+    <p class="line-through text-gray-500">$99.05 </p>
+<span class="text-red-500"> $69.05</span>
+</div>
+        
+       </div>
+       <!-- box 03 -->
+       <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="flex justify-start  flex-col">
+         <div class="h-45 w-50 overflow-hidden relative  bg-gray-100 ">
+            <span class="w-10 h-5 bg-red-700  absolute top-0 left-0 text-center text-white">Sale</span>
+
+            <img class=" w-full h-full" src="./public/images/drops.png" alt="">
+        </div>
+        <p class="font-semibold">Skin Care & Beauty</p>
+<div class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+</div>
+<div class="flex gap-2">
+    <p class="line-through text-gray-500">$99.05 </p>
+<span class="text-red-500"> $69.05</span>
+</div>
+        
+       </div>
+       <!-- box 04 -->
+       <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="flex justify-start  flex-col">
+         <div class="h-45 w-50 overflow-hidden relative  bg-gray-100 ">
+            <span class="w-10 h-5 bg-red-700  absolute top-0 left-0 text-center text-white">Sale</span>
+
+            <img class=" w-full h-full" src="./public/images/tiser.png" alt="">
+        </div>
+        <p class="font-semibold">Skin Care & Beauty</p>
+<div class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-500">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+</div>
+<div class="flex gap-2">
+    <p class="line-through text-gray-500">$99.05 </p>
+<span class="text-red-500"> $69.05</span>
+</div>
+ </div>
+</div>
+
+
+<!-- section -->
+
+<section class="flex w-full flex-col h-auto justify-center items-center py-4">
+    <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="capitalize text-3xl text-green-950 mt-3 font-medium text-center">get your customized skincare treatment</h1>
+    <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="text-center mt-2 ">We have a specialist ready to help you with any queries and advise you about our skincare collection. <br>Every routine starts with a expert advice formulated for your skincare conditions.</p>
+    <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="text-2xl font-semibold">ShopSkin Care</p>
+
+    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class=" mt-3 flex justify-center items-center p-2 ">
+        <img class="rounded-sm" src="./public/images/care.jfif" alt="">
+    </div>
+</section>
+
+
+<!-- footer -->
+
+<footer class="bg-[#11111] text-black py-12 px-6 md:px-12 border-t border-zinc-800 font-sans">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+    
+    <div class="space-y-4">
+      <h3 class="text-xl font-bold tracking-wide text-black">BEASTLY</h3>
+      <p class="text-black text-sm leading-relaxed">
+        Carefully crafted skincare solutions created after years of research to prevent dry, flaky skin. Chosen by influencers worldwide.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="text-sm font-semibold tracking-wider text-black uppercase mb-4">Shop</h4>
+      <ul class="space-y-2 text-sm text-black">
+        <li><a href="#" class="hover:text-green-950 transition-colors duration-200">Anti-Aging Cleanser</a></li>
+        <li><a href="#" class="hover:text-green-950 transition-colors duration-200">Customised Treatments</a></li>
+        <li><a href="#" class="hover:text-green-950 transition-colors duration-200">Serums & Oils</a></li>
+        <li><a href="#" class="hover:text-green-950 transition-colors duration-200">New Arrivals</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-sm font-semibold tracking-wider text-black uppercase mb-4">Support</h4>
+      <ul class="space-y-2 text-sm text-black">
+        <li><a href="#" class="hover:text-green-950 transition-colors duration-200">Expert Advice</a></li>
+        <li><a href="#" class="hover:text-green-950 transition-colors duration-200">Shipping & Returns</a></li>
+        <li><a href="#" class="hover:text-green-950 transition-colors duration-200">FAQs</a></li>
+        <li><a href="#" class="hover:text-green-950 transition-colors duration-200">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="space-y-4">
+      <h4 class="text-sm font-semibold tracking-wider text-black uppercase">Stay Updated</h4>
+      <p class="text-black text-sm">Subscribe to get flat 15% OFF on your first order.</p>
+      <form class="flex flex-col sm:flex-row gap-2">
+        <input 
+          type="email" 
+          placeholder="Your email address" 
+          class="bg-zinc-900 border border-zinc-700 text-white text-sm px-4 py-2 rounded focus:outline-none focus:border-zinc-500 flex-grow"
+        />
+        <button class="bg-gray-400 cursor-pointer text-black text-sm font-medium px-4 py-2 rounded hover:bg-zinc-200 transition-colors duration-200 whitespace-nowrap">
+          Join Now
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="max-w-7xl mx-auto mt-12 pt-6 border-t text-center border-zinc-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-black ">
+    <p class="text-center">&copy; 2026 Beastly Skincare. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation ki speed (1 second)
+    once: true      // animation sirf ek baar chale
+  });
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
